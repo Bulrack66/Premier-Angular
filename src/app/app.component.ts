@@ -7,31 +7,35 @@ import { FaceSnap } from './models/face-snap.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  mySnap!: FaceSnap;
-  myOtherSnap!: FaceSnap;
-  myLastSnap!: FaceSnap;
+  faceSnaps!: FaceSnap[];
 
 ngOnInit() {
-    this.mySnap = new FaceSnap(
-    'Archibald',
-    'Mon meilleur ami depuis tout petit',
-    'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
-    new Date(),
-    0
-    )
-    this.myOtherSnap = new FaceSnap(
-    'Luke Skywalker',
-    'Un mec trés fort',
-    'https://cdn-media2.planete-starwars.com/news/60545-luke-skywalker-169-lg.jpg?w=768&f=w',
-    new Date(),
-    0
-    )
-    this.myLastSnap = new FaceSnap(
-    'C-3PO',
-    'Un robot pas comme les autres',
-    'https://cdn-media.planete-starwars.com/news/63420-1-169-lg.jpg',
-    new Date(),
-    0
-    )
+    this.faceSnaps = [
+      {
+      title: 'Archibald',
+      description: 'Mon meilleur ami depuis tout petit',
+      imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
+      createdDate: new Date(),
+      snaps: 0,
+      location: 'Malaga'
+      },
+      {
+
+      title:'Luke Skywalker',
+      description:'Un mec trés fort',
+      imageUrl:'https://cdn-media2.planete-starwars.com/news/60545-luke-skywalker-169-lg.jpg?w=768&f=w',
+      createdDate:new Date(),
+      snaps:0,
+      location:'Pekin'
+      },
+      {
+      title:'C-3PO',
+      description:'Un robot pas comme les autres',
+      imageUrl:'https://cdn-media.planete-starwars.com/news/63420-1-169-lg.jpg',
+      createdDate:new Date(),
+      snaps:0,
+      location:'Washington'
+      }
+    ]
   };
 }
