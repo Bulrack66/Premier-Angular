@@ -16,3 +16,4 @@ import { FaceSnapComponent } from './face-snap/face-snap.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

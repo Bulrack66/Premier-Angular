@@ -1,10 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { FaceSnap } from './models/face-snap.model';
 
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
+
 })
 export class AppComponent implements OnInit {
   faceSnaps!: FaceSnap[];
@@ -16,7 +19,7 @@ ngOnInit() {
       description: 'Mon meilleur ami depuis tout petit',
       imageUrl: 'https://cdn.pixabay.com/photo/2015/05/31/16/03/teddy-bear-792273_1280.jpg',
       createdDate: new Date(),
-      snaps: 0,
+      snaps: 20,
       location: 'Malaga'
       },
       {
@@ -33,7 +36,7 @@ ngOnInit() {
       description:'Un robot pas comme les autres',
       imageUrl:'https://cdn-media.planete-starwars.com/news/63420-1-169-lg.jpg',
       createdDate:new Date(),
-      snaps:0,
+      snaps: 35,
       location:'Washington'
       }
     ]
