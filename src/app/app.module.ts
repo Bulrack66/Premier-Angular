@@ -8,6 +8,8 @@ import * as fr from '@angular/common/locales/fr';
 import { FaceSnapListComponent } from './face-snap-list/face-snap-list.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AppRoutingModule } from './app-routing.module';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,11 @@ import { FooterComponent } from './footer/footer.component';
     FaceSnapListComponent,
     HeaderComponent,
     FooterComponent,
+    LandingPageComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     { provide: LOCALE_ID, useValue: 'fr-FR'}
